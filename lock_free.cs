@@ -4,6 +4,8 @@ using System.Threading;
 
 namespace lock_free
 {
+    // The test is exploring the performance of full-positive CompareExchange case
+    // Need to add multiple contending writers, contending for 'free'(0) positions on a single array
     class PerformanceTest
     {
         static void Main(string[] args)
